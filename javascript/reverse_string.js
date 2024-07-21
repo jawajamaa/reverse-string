@@ -1,6 +1,16 @@
 function reverseString(str) {
-  // type your code here
-}
+  if (!str) {
+    let reversedStr = "";
+    return reversedStr;
+  } else {
+    let reversedStr = "";
+    for (const char of str) {
+      reversedStr = char + reversedStr;
+    };
+    return reversedStr;
+  };
+  }
+// console.log(reverseString("ybabtac"));
 
 if (require.main === module) {
   // add your own tests in here
